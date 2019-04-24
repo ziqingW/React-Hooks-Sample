@@ -69,7 +69,7 @@ export default function App() {
             <ul>
               {item.content.map((singleItem, j) => <li key={j}><button className="btn btn-del" onClick={() => delItem(i, j)}>-</button><p className="content">{singleItem}</p></li>)}
             </ul>
-            {!display[i] ? (<button className="btn btn-add" onClick={() => addItem(i)}>+</button>) : null}
+            {!display[i] ? (<div><input type="button" value="+" className="btn btn-add" id={`add-button-${i}`} onClick={() => addItem(i)}/><label htmlFor={`add-button-${i}`}><i>new remind</i></label></div>) : null}
             {display[i] ? (<div><textarea rows="4" onChange={e => addInput(e)}/><button className="btn-input" onClick={() => addContent(i)}>OK</button></div>) : null}
         </div>)
       })}
