@@ -1,33 +1,87 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Roboto', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 25px 0 25px;
+}
+
+.wrapper ul {
+  padding: 0;
+}
+.wrapper li {
+  list-style-type: none;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+}
+.single-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 23%;
+  min-width: 270px;
+  border-radius: 5%;
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+.single-card h3 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.single-card textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn {
+  box-shadow: 1px 1px 1px grey;
+  border: 1px solid transparent;
+  width: 15px;
+  height: 15px;
+  padding: 0;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-del {
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #f2837b;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-add {
+  background-color: #1969d8;
+}
+.btn-add:hover {
+  filter: brightness(150%);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-del:hover {
+  background-color: red;
+}
+.btn-input {
+  box-shadow: 1px 1px 2px silver;
+}
+.btn-input:hover {
+  cursor: pointer;
+  filter: contrast(120%);
+}
+.content {
+  width: 100%;
+  margin: 8px 0 0 5px;
+  padding: 5px;
+  word-wrap: break-word;
+  background-color: rgba(237, 249, 219, 0.2);
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px silver;
 }
