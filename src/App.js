@@ -4,27 +4,28 @@ import './App.css';
 export default function App() {
   const initialItems = [
     {
-    content: ['123',
-    '323d',
-    'juimrk'],
+    content: ['Drink milk',
+    'Feed the cat',
+    'Dry washing clothes'],
     title: 'Great'
   },
     {
-    content: ['klkis',
-    'dsdaee',
-    'dsg4'],
+    content: ['Coding practice',
+    'Read a blog',
+    'Sing a song',
+    'Try a cooking recipe'],
     title: 'Nice'
   },
     {
-    content: ['332',
-    '3dcc',
-    '7ujnf'],
+    content: ['Sneak into the classroom',
+    'Code challenge',
+    'Grocery shopping'],
     title: 'Average'
   },
     {
-    content:['43f',
-    'kio',
-    'cvdws'],
+    content:['Write coverletter, again',
+    'Apply more jobs',
+    'Receive denial one more time XD'],
     title: 'OK'
   }
 ];
